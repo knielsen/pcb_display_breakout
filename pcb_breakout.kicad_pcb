@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 57.924999 51.5125 151.925001 130.925001)
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 178)
     (zones 0)
     (modules 3)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.4)
     (user_trace_width 1)
     (trace_clearance 0.25)
     (zone_clearance 0.508)
@@ -738,9 +738,12 @@
     (pad "" smd circle (at 16 3.35) (size 1 1) (layers F.Cu F.Paste F.Mask))
   )
 
-  (gr_line (start 58 94) (end 58 124) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 145 94) (end 58 94) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 145 124) (end 145 94) (layer Edge.Cuts) (width 0.15))
+  (gr_text "ET024002DMU\nbreakout\nrev1" (at 61 102.8) (layer F.Cu)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
+  )
+  (gr_line (start 58 50) (end 58 124) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 145 50) (end 58 50) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 145 124) (end 145 50) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 58 124) (end 145 124) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 138.3 115.644) (end 140.64 117.984) (width 1) (layer F.Cu) (net 1))
